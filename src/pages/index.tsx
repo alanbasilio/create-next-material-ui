@@ -1,51 +1,34 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import { IconButton, Button, Typography, Toolbar, AppBar, Hidden, Grid } from '@material-ui/core';
+import MenuIcon from '@material-ui/icons/Menu';
 
-export default function Home() {
+const Home = (): JSX.Element => {
 	return (
 		<>
 			<main>
-				<h1>
-					Welcome to <a href="https://nextjs.org">Next.js!</a>
-				</h1>
-
-				<p>Get started by editing </p>
-
-				<div>
-					<a href="https://nextjs.org/docs">
-						<h2>Documentation &rarr;</h2>
-						<p>Find in-depth information about Next.js features and API.</p>
-					</a>
-
-					<a href="https://nextjs.org/learn">
-						<h2>Learn &rarr;</h2>
-						<p>Learn about Next.js in an interactive course with quizzes!</p>
-					</a>
-
-					<a href="https://github.com/vercel/next.js/tree/master/examples">
-						<h2>Examples &rarr;</h2>
-						<p>Discover and deploy boilerplate example Next.js projects.</p>
-					</a>
-
-					<a href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app">
-						<h2>Deploy &rarr;</h2>
-						<p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-					</a>
-				</div>
+				<AppBar position="static">
+					<Toolbar>
+						<IconButton edge="start" color="inherit" aria-label="menu">
+							<MenuIcon />
+						</IconButton>
+						<Typography variant="h6">Next.js Material UI</Typography>
+						<Button color="inherit">Login</Button>
+					</Toolbar>
+				</AppBar>
+				<Grid container spacing={3}>
+					<Hidden only="xs">
+						<Grid item md={6} sm={6} xs={12}></Grid>
+					</Hidden>
+					<Grid item md={6} sm={6} xs={12}>
+						<p>Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. </p>
+						<Typography>
+							Pinnace holystone mizzenmast quarter crows nest nipperkin grog yardarm hempen halter furl.
+							Swab barque interloper chantey doubloon starboard grog black jack gangway rutters.{' '}
+						</Typography>
+					</Grid>
+				</Grid>
 			</main>
-
-			<footer>
-				<a
-					href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Powered by{' '}
-					<span>
-						<Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-					</span>
-				</a>
-			</footer>
 		</>
 	);
-}
+};
+
+export default Home;

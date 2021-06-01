@@ -13,7 +13,7 @@ const sagaMiddleware = createSagaMiddleware();
 // Redux-persist configuration
 const persistConfig = {
 	key: 'w3b73JK@zK5w!7eQmh&L3KesNWjbDVwf^pRKqGj%D',
-	storage: storage,
+	storage,
 	whitelist: ['auth']
 };
 
