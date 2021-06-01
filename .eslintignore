@@ -1,0 +1,13 @@
+# dependencies
+node_modules/
+out/
+.yarn/
+.next/
+
+# production
+build/
+public/
+
+# ide
+.vscode/
+
