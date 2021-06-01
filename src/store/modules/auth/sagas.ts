@@ -1,9 +1,9 @@
 import { takeLatest, call, put, all } from 'redux-saga/effects';
 import { ActionType } from 'typesafe-actions';
+import swal from '@sweetalert/with-react';
 import { signInSuccess, signInFailure, signInRequest } from './actions';
 
 import { TMS_API } from '~/services/API';
-import swal from '@sweetalert/with-react';
 
 export function* signIn({ payload }: ActionType<typeof signInRequest>) {
 	try {

@@ -1,5 +1,5 @@
-import { AuthState, AuthAction } from './types';
 import jwt_decode from 'jwt-decode';
+import { AuthState, AuthAction } from './types';
 
 const initialState: AuthState = {
 	loadingSignInRequest: false,
