@@ -12,8 +12,8 @@ const Home = (): JSX.Element => {
 							<MenuIcon />
 						</IconButton>
 						<Typography variant="h6">Next.js Material UI</Typography>
-						<Link href="/page-2" passHref>
-							<Button color="inherit">Go To Page 2</Button>
+						<Link href="/" passHref>
+							<Button color="inherit">Go To Home</Button>
 						</Link>
 					</Toolbar>
 				</AppBar>
