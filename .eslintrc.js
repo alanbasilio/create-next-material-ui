@@ -2,7 +2,7 @@ module.exports = {
 	root: true,
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
-		ecmaVersion: 2020,
+		ecmaVersion: 2021,
 		sourceType: 'module',
 		ecmaFeatures: {
 			jsx: true
@@ -21,13 +21,10 @@ module.exports = {
 	extends: [
 		'eslint:recommended',
 		'plugin:@typescript-eslint/eslint-recommended',
-		// 'plugin:@typescript-eslint/recommended',
+		'plugin:@typescript-eslint/recommended',
 		'plugin:react/recommended',
 		'plugin:jsx-a11y/recommended',
-		'prettier/@typescript-eslint',
 		'plugin:prettier/recommended', // Make sure this is always the last element in the array.
-		// 'plugin:import/errors',
-		// 'plugin:import/warnings',
 		'plugin:react-hooks/recommended'
 		// 'airbnb'
 	],
