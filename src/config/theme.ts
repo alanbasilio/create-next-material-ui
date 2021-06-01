@@ -17,9 +17,6 @@ const theme = createMuiTheme(
 			},
 			error: red
 		},
-		status: {
-			danger: 'orange'
-		},
 		typography: {
 			fontSize: 14,
 			h1: {
