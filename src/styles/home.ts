@@ -1,9 +1,11 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const styles = makeStyles({
-	test: {
-		width: 200,
-		height: 200
+	column1: {
+		backgroundColor: 'red'
+	},
+	column2: {
+		backgroundColor: 'blue'
 	}
 });
 

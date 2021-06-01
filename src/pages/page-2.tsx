@@ -1,8 +1,11 @@
 import { IconButton, Button, Typography, Toolbar, AppBar, Hidden, Grid } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import Link from 'next/link';
+import styles from '~/styles/home';
 
 const Home = (): JSX.Element => {
+	const classes = styles();
+
 	return (
 		<>
 			<main>
@@ -19,9 +22,9 @@ const Home = (): JSX.Element => {
 				</AppBar>
 				<Grid container spacing={3}>
 					<Hidden only="xs">
-						<Grid item md={6} sm={6} xs={12}></Grid>
+						<Grid item md={6} sm={6} xs={12} className={classes.column1}></Grid>
 					</Hidden>
-					<Grid item md={6} sm={6} xs={12}>
+					<Grid item md={6} sm={6} xs={12} className={classes.column2}>
 						<p>Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. </p>
 						<Typography>
 							Pinnace holystone mizzenmast quarter crows nest nipperkin grog yardarm hempen halter furl.
